@@ -25,4 +25,5 @@ inherit cmake
 # avoid wrong GMP_NUMB_BITS from implicit CMake import from sysroot-native
 do_configure_prepend(){
     rm -f ${RECIPE_SYSROOT_NATIVE}/usr/include/gmp.h
+    rm -f ${RECIPE_SYSROOT_NATIVE}/usr/lib/libgmp*.so*
 }
