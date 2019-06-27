@@ -36,6 +36,7 @@ EXTRA_OECMAKE += "\
 		   -Dcryptopp_DIR=${CMAKE_WORK_DIR} \
 		   -Dlibjson-rpc-cpp_DIR=${CMAKE_WORK_DIR} \
 		   -DLibFF_DIR=${CMAKE_WORK_DIR} \
+		   -Dlibff_LIBRARY=${RECIPE_SYSROOT}/usr/lib/libff.a \
 "
 
 inherit cmake
