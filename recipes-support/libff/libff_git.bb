@@ -10,6 +10,19 @@ SRCREV = "${AUTOREV}"
 
 S = "${WORKDIR}/git"
 
-DEPENDS = "procps"
+DEPENDS = " gmp"
+
+EXTRA_OECMAKE += "\
+		  -DGMP_INCLUDE_DIR=${RECIPE_SYSROOT}/usr/include \
+		  -DGMP_LIBRARY=${RECIPE_SYSROOT}/usr/lib/libgmpxx.so \
+		  -DCURVE=ALT_BN128 -DPERFORMANCE=Off -DWITH_PROCPS=Off \
+		  -DUSE_PT_COMPRESSION=Off \
+		  -DCMAKE_SYSROOT=${RECIPE_SYSROOT} \
+"
 
 inherit cmake
+
+# avoid wrong GMP_NUMB_BITS from implicit CMake import from sysroot-native
+do_configure_prepend(){
+    rm -f ${RECIPE_SYSROOT_NATIVE}/usr/include/gmp.h
+}
