@@ -46,9 +46,15 @@ You can find some tutorials in the `docs` folder:
  - [Running geth on a QEMUlated machine](https://github.com/bernardoaraujor/meta-ethereum/blob/master/docs/qemu_tutorial.md) ([YouTube](https://youtu.be/IZ6nDKGy7NA))
  - [Running geth on a BeagleBone Black](https://github.com/bernardoaraujor/meta-ethereum/blob/master/docs/bbb_tutorial.md)
  - [Running geth on an RCar H3 Starter Kit](https://github.com/bernardoaraujor/meta-ethereum/blob/master/docs/rcar_tutorial.md) ([YouTube](https://www.youtube.com/watch?v=X7G0kdYsrg8))
+ 
+---
+## Donations
+If you find meta-ethereum useful, please consider making a donation:
 
+ - **BTC**: 3NUDRd9hZV2Y8cm6J7u6qmdQVNoWhJrjen
+ - **LTC**: LSpyeCjxY28z9VpYjoGJGE8QZLxUL7Rk6c
+ - **ETH**: 0x6028475be0b1cf8a566bec7ff4b4f5d28406266e
 ---
 ## License
 
 meta-ethereum is released under the [GPLv3](https://github.com/bernardoaraujor/meta-ethereum/blob/master/LICENSE).
-
