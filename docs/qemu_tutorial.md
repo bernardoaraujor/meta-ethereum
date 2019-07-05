@@ -57,7 +57,7 @@ Build a core-image-minimal image:
 $ bitbake core-image-minimal
 ```
 
-Run qemu:
+Building an image will probably take a long time. After BitBake has finished, run qemu:
 
 ```
 $ runqemu qemumips core-image-minimal nographic
