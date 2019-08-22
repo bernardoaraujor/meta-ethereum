@@ -270,7 +270,7 @@ That's it! You have connected your RCar H3 to the Ethereum Blockchain! Of course
 
 ---
 
-Copyright (C) 2019 Bernardo Rodrigues <bernardoar@protonmail.com>
+Copyright (C) 2019 Bernardo Rodrigues <bernardoaraujor@gmail.com>
 
 Released under [GPLv3](https://github.com/bernardoaraujor/meta-ethereum/blob/master/LICENSE).
 

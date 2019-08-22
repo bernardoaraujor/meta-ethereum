@@ -327,6 +327,6 @@ Of course, real smart contracts and relevant interactions would take a lot more 
 
 ---
 
-Copyright (C) 2019 Bernardo Rodrigues <bernardoar@protonmail.com>
+Copyright (C) 2019 Bernardo Rodrigues <bernardoaraujor@gmail.com>
 
 Released under [GPLv3](https://github.com/bernardoaraujor/meta-ethereum/blob/master/LICENSE).

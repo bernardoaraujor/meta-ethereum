@@ -21,7 +21,7 @@ Currently, we aim to provide recipes for the following:
  * **aleth/cpp-ethereum** [v1.6.0 - under development]: <https://github.com/ethereum/aleth>
  * **parity** [v2.4.6 - planned]: <https://github.com/paritytech/parity-ethereum>
  
-Any collaborations (issues, patches, pull requests, suggestions) are more than welcome: <bernardoar@protonmail.com>
+Any collaborations (issues, patches, pull requests, suggestions) are more than welcome: <bernardoaraujor@gmail.com>
 
 ---
 ## Dependencies

@@ -1,4 +1,4 @@
-# Copyright (C) 2019 Bernardo Rodrigues <bernardoar@protonmail.com>
+# Copyright (C) 2019 Bernardo Rodrigues <bernardoaraujor@gmail.com>
 
 SUMMARY = "Official Go implementation of the Ethereum protocol"
 DESCRIPTION = "geth is the command line interface for running a full ethereum node implemented in Go."

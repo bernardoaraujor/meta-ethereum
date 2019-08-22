@@ -169,6 +169,6 @@ That's it! You have connected your QEMU MIPS emulation to the Ethereum Blockchai
 
 ---
 
-Copyright (C) 2019 Bernardo Rodrigues <bernardoar@protonmail.com>
+Copyright (C) 2019 Bernardo Rodrigues <bernardoaraujor@gmail.com>
 
 Released under [GPLv3](https://github.com/bernardoaraujor/meta-ethereum/blob/master/LICENSE).

@@ -1,4 +1,4 @@
-# Copyright (C) 2019 Bernardo Rodrigues <bernardoar@protonmail.com>
+# Copyright (C) 2019 Bernardo Rodrigues <bernardoaraujor@gmail.com>
 
 SUMMARY = "C/C++ implementation of Ethash – the Ethereum Proof of Work algorithm"
 HOMEPAGE = "https://github.com/ethereum/wiki/wiki/Ethash/"
