@@ -1,18 +1,18 @@
-# Copyright (C) 2019 Bernardo Rodrigues <bernardoaraujor@gmail.com>
+# Copyright (C) 2021 Bernardo Rodrigues <barodrigues@protonmail.com>
 
 SUMMARY = "Official Go implementation of the Ethereum protocol"
-DESCRIPTION = "geth is the command line interface for running a full ethereum node implemented in Go."
+DESCRIPTION = "Go Ethereum is one of the three original implementations of the Ethereum protocol. It is written in Go, fully open source and licensed under the GNU LGPL v3."
 HOMEPAGE = "https://geth.ethereum.org"
 LICENSE = "LGPLv3"
-LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/GPL-3.0;md5=c79ff39f19dfec6d293b95dea7b07891"
+LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/LGPL-3.0-only;md5=bfccfe952269fff2b407dd11f2f3083b"
 
-SRC_URI = "git://github.com/ethereum/go-ethereum.git;branch=release/1.8;tag=v${PV}"
-
-inherit go
+inherit go go-mod
 
 GO_IMPORT = "github.com/ethereum/go-ethereum"
+SRC_URI = "git://github.com/ethereum/go-ethereum.git;tag=v${PV};destsuffix=${BPN}-${PV}/src/${GO_IMPORT}"
+
 GO_LINKSHARED = ""
-PTEST_ENABLED = "0"
+GOBUILDFLAGS_append = " -modcacherw"
 
 LDFLAGS += "-lpthread"
 
