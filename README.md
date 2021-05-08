@@ -16,33 +16,47 @@ Together, these projects provides a flexible set of tools and a space where embe
 
 The **meta-ethereum** OpenEmbedded Layer aims to provide recipes for Ethereum related programs, tools and libraries in order to support the Ethereum blockchain on a large variety of embedded devices. Please note that the meta-* is an OE layer naming convention, and this repository has nothing to do with the [Ethereum Meta](https://ethermeta.com/) project.
 
-Currently, we aim to provide recipes for the following:
-
- * **go-ethereum**: <https://github.com/ethereum/go-ethereum>:
-   - `geth`
-   - `clef`
-   - `devp2p`
-   - `abigen`
-   - `bootnode`
-   - `evm`
-   - `rlpdump`
-   - `puppeth`
- * **OpenEthereum**: <https://github.com/openethereum/openethereum>:
-   - `openethereum`
-   - `evmbin`
-   - `ethstore`
-   - `ethkey`
-   - `ethabi`
-   - `whisper`
- * **Nimbus**: <https://github.com/status-im/nimbus-eth2>
-   - `nimbus_beacon_node`
-   - `nimbus_validator_client`
-   - `nimbus_signing_process`
-   - `nbench`
-   - `ncli`
-   - `ncli_db`
- * **Trinity**: <https://trinity.ethereum.org/>
-   - `trinity`
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-nrix"></th>
+    <th class="tg-nrix" colspan="3">ETH1</th>
+    <th class="tg-nrix" colspan="4">ETH2</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-nrix">PROJECT</td>
+    <td class="tg-nrix"><a href="https://github.com/status-im/nimbus-eth1">Nimbus</a></td>
+    <td class="tg-nrix"><a href="https://geth.ethereum.org/">go-ethereum</a></td>
+    <td class="tg-nrix"><a href="https://github.com/openethereum/openethereum">OpenEthereum</a></td>
+    <td class="tg-nrix"><a href="https://github.com/status-im/nimbus-eth2">Nimbus</a></td>
+    <td class="tg-nrix"><a href="https://trinity.ethereum.org/">Trinity</a></td>
+    <td class="tg-nrix"><a href="https://github.com/prysmaticlabs/prysm">Prysm</a></td>
+    <td class="tg-nrix"><a href="https://github.com/sigp/lighthouse">Lighthouse</a></td>
+  </tr>
+  <tr>
+    <td class="tg-nrix">STATUS</td>
+    <td class="tg-nrix">planned</td>
+    <td class="tg-nrix"><a href="https://github.com/oe-eth/meta-ethereum/blob/master/recipes-ethereum/go-ethereum/go-ethereum_1.10.3.bb">v1.10.3</a></td>
+    <td class="tg-nrix"><a href="https://github.com/oe-eth/meta-ethereum/blob/master/recipes-ethereum/openethereum/openethereum_3.2.5.bb">v3.2.5</a> (dev)</td>
+    <td class="tg-nrix">planned</td>
+    <td class="tg-nrix">planned</td>
+    <td class="tg-nrix">planned</td>
+    <td class="tg-baqh">planned</td>
+  </tr>
+  <tr>
+    <td class="tg-nrix">EXECUTABLES<br></td>
+    <td class="tg-nrix"></td>
+    <td class="tg-nrix">geth<br>clef<br>devp2p<br>abigen<br>abidump<br>bootnode<br>evm<br>rlpdump<br>puppeth<br>checkpoint-admin<br>faucet<br>ethkey</td>
+    <td class="tg-nrix">openethereum<br>evmbin<br>ethstore<br>ethabi<br>whisper<br></td>
+    <td class="tg-nrix">nimbus_beacon_node<br>nimbus_signing_process<br>nimbus_validator_client<br>ncli<br>ncli_db</td>
+    <td class="tg-nrix">trinity</td>
+    <td class="tg-nrix"></td>
+    <td class="tg-baqh"></td>
+  </tr>
+</tbody>
+</table>
 
 Any collaborations (issues, patches, pull requests, suggestions) are more than welcome: <barodrigues@protonmail.com>
 
@@ -52,9 +66,9 @@ Any collaborations (issues, patches, pull requests, suggestions) are more than w
 The meta-ethereum layer depends on:
 
 ```
-	URI: git://git.openembedded.org/openembedded-core
-	layers: meta
-	branch: hardknott
+  URI: git://git.openembedded.org/openembedded-core
+  layers: meta
+  branch: hardknott
 
   URI: git://github.com/meta-rust/meta-rust
   layers: meta-rust
