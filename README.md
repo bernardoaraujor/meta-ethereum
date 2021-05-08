@@ -41,6 +41,8 @@ Currently, we aim to provide recipes for the following:
    - `nbench`
    - `ncli`
    - `ncli_db`
+ * **Trinity**: <https://trinity.ethereum.org/>
+   - `trinity`
 
 Any collaborations (issues, patches, pull requests, suggestions) are more than welcome: <barodrigues@protonmail.com>
 
